@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="split left">
+        <div class="passGenerator">
+            <h1 id="pass"> Password Generator </h1>
+            <input id="passInput" placeholder="Create password" readonly>
+            <button class="createPass" onclick="genPassword()"><span>Generate!</span></button>
+            <button class="copyButtton" onclick="copyPassword()">Copy</button>
+        </div>
+    </div>
+    <div class="split right">
+        <h2>Settings</h2>
+        <div class="checkItems">
+            
+            <label>
+                <input id="passLenght" type="number" maxlength="14" placeholder="Max 14">
+                Length
+            </label>
+            <label class="toggler-wrapper style-1">
+                <input id="arr_num" class="checkItem" type="checkbox">
+                <div class="toggler-slider">
+                  <div class="toggler-knob"></div>
+                </div>
+                Numbers
+            </label>
+            
+            <label class="toggler-wrapper style-1">
+                <input id="arr_en" class="checkItem" type="checkbox">
+                <div class="toggler-slider">
+                  <div class="toggler-knob"></div>
+                </div>
+                LowerCase
+            </label>
+
+            <label class="toggler-wrapper style-1">
+                <input id="arr_EN" class="checkItem" type="checkbox">
+                <div class="toggler-slider">
+                  <div class="toggler-knob"></div>
+                </div>
+                UpperCase
+            </label>
+            
+            <label class="toggler-wrapper style-1">
+                <input id="arr_symb" class="checkItem" type="checkbox">
+                <div class="toggler-slider">
+                  <div class="toggler-knob"></div>
+                </div>
+                Symvols
+            </label>
+            
+        </div>
+    </div>
+    
+
+
+</body>
+</html>
